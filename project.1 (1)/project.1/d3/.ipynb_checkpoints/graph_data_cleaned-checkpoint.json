@@ -1,0 +1,2084 @@
+{
+    "nodes": [
+        {
+            "id": "AMR",
+            "type": "region"
+        },
+        {
+            "id": "EMR",
+            "type": "region"
+        },
+        {
+            "id": "AFR",
+            "type": "region"
+        },
+        {
+            "id": "EUR",
+            "type": "region"
+        },
+        {
+            "id": "WPR",
+            "type": "region"
+        },
+        {
+            "id": "SEA",
+            "type": "region"
+        },
+        {
+            "id": "Aruba",
+            "type": "country",
+            "latitude": 12.52111,
+            "longitude": -69.968338
+        },
+        {
+            "id": "Afghanistan",
+            "type": "country",
+            "latitude": 33.93911,
+            "longitude": 67.709953
+        },
+        {
+            "id": "Angola",
+            "type": "country",
+            "latitude": -11.202692,
+            "longitude": 17.873887
+        },
+        {
+            "id": "Anguilla",
+            "type": "country",
+            "latitude": 18.220554,
+            "longitude": -63.068615
+        },
+        {
+            "id": "Albania",
+            "type": "country",
+            "latitude": 41.153332,
+            "longitude": 20.168331
+        },
+        {
+            "id": "Andorra",
+            "type": "country",
+            "latitude": 42.546245,
+            "longitude": 1.601554
+        },
+        {
+            "id": "Netherlands Antilles",
+            "type": "country",
+            "latitude": 12.226079,
+            "longitude": -69.060087
+        },
+        {
+            "id": "United Arab Emirates",
+            "type": "country",
+            "latitude": 23.424076,
+            "longitude": 53.847818
+        },
+        {
+            "id": "Argentina",
+            "type": "country",
+            "latitude": -38.416097,
+            "longitude": -63.616672
+        },
+        {
+            "id": "Armenia",
+            "type": "country",
+            "latitude": 40.069099,
+            "longitude": 45.038189
+        },
+        {
+            "id": "American Samoa",
+            "type": "country",
+            "latitude": -14.270972,
+            "longitude": -170.132217
+        },
+        {
+            "id": "Antigua and Barbuda",
+            "type": "country",
+            "latitude": 17.060816,
+            "longitude": -61.796428
+        },
+        {
+            "id": "Australia",
+            "type": "country",
+            "latitude": -25.274398,
+            "longitude": 133.775136
+        },
+        {
+            "id": "Austria",
+            "type": "country",
+            "latitude": 47.516231,
+            "longitude": 14.550072
+        },
+        {
+            "id": "Azerbaijan",
+            "type": "country",
+            "latitude": 40.143105,
+            "longitude": 47.576927
+        },
+        {
+            "id": "Burundi",
+            "type": "country",
+            "latitude": -3.373056,
+            "longitude": 29.918886
+        },
+        {
+            "id": "Belgium",
+            "type": "country",
+            "latitude": 50.503887,
+            "longitude": 4.469936
+        },
+        {
+            "id": "Benin",
+            "type": "country",
+            "latitude": 9.30769,
+            "longitude": 2.315834
+        },
+        {
+            "id": "Burkina Faso",
+            "type": "country",
+            "latitude": 12.238333,
+            "longitude": -1.561593
+        },
+        {
+            "id": "Bangladesh",
+            "type": "country",
+            "latitude": 23.684994,
+            "longitude": 90.356331
+        },
+        {
+            "id": "Bulgaria",
+            "type": "country",
+            "latitude": 42.733883,
+            "longitude": 25.48583
+        },
+        {
+            "id": "Bahrain",
+            "type": "country",
+            "latitude": 25.930414,
+            "longitude": 50.637772
+        },
+        {
+            "id": "Bahamas",
+            "type": "country",
+            "latitude": 25.03428,
+            "longitude": -77.39628
+        },
+        {
+            "id": "Bosnia and Herzegovina",
+            "type": "country",
+            "latitude": 43.915886,
+            "longitude": 17.679076
+        },
+        {
+            "id": "Belarus",
+            "type": "country",
+            "latitude": 53.709807,
+            "longitude": 27.953389
+        },
+        {
+            "id": "Belize",
+            "type": "country",
+            "latitude": 17.189877,
+            "longitude": -88.49765
+        },
+        {
+            "id": "Bermuda",
+            "type": "country",
+            "latitude": 32.321384,
+            "longitude": -64.75737
+        },
+        {
+            "id": "Bolivia (Plurinational State of)",
+            "type": "country",
+            "latitude": -16.290154,
+            "longitude": -63.588653
+        },
+        {
+            "id": "Brazil",
+            "type": "country",
+            "latitude": -14.235004,
+            "longitude": -51.92528
+        },
+        {
+            "id": "Barbados",
+            "type": "country",
+            "latitude": 13.193887,
+            "longitude": -59.543198
+        },
+        {
+            "id": "Brunei Darussalam",
+            "type": "country",
+            "latitude": 4.535277,
+            "longitude": 114.727669
+        },
+        {
+            "id": "Bhutan",
+            "type": "country",
+            "latitude": 27.514162,
+            "longitude": 90.433601
+        },
+        {
+            "id": "Botswana",
+            "type": "country",
+            "latitude": -22.328474,
+            "longitude": 24.684866
+        },
+        {
+            "id": "Central African Republic",
+            "type": "country",
+            "latitude": 6.611111,
+            "longitude": 20.939444
+        },
+        {
+            "id": "Canada",
+            "type": "country",
+            "latitude": 56.130366,
+            "longitude": -106.346771
+        },
+        {
+            "id": "Switzerland",
+            "type": "country",
+            "latitude": 46.818188,
+            "longitude": 8.227512
+        },
+        {
+            "id": "Chile",
+            "type": "country",
+            "latitude": -35.675147,
+            "longitude": -71.542969
+        },
+        {
+            "id": "China",
+            "type": "country",
+            "latitude": 35.86166,
+            "longitude": 104.195397
+        },
+        {
+            "id": "C\u00f4te d'Ivoire",
+            "type": "country",
+            "latitude": 7.539989,
+            "longitude": -5.54708
+        },
+        {
+            "id": "Cameroon",
+            "type": "country",
+            "latitude": 7.369722,
+            "longitude": 12.354722
+        },
+        {
+            "id": "Congo",
+            "type": "country",
+            "latitude": -0.228021,
+            "longitude": 15.827659
+        },
+        {
+            "id": "Cook Islands",
+            "type": "country",
+            "latitude": -21.236736,
+            "longitude": -159.777671
+        },
+        {
+            "id": "Colombia",
+            "type": "country",
+            "latitude": 4.570868,
+            "longitude": -74.297333
+        },
+        {
+            "id": "Comoros",
+            "type": "country",
+            "latitude": -11.875001,
+            "longitude": 43.872219
+        },
+        {
+            "id": "Costa Rica",
+            "type": "country",
+            "latitude": 9.748917,
+            "longitude": -83.753428
+        },
+        {
+            "id": "Cuba",
+            "type": "country",
+            "latitude": 21.521757,
+            "longitude": -77.781167
+        },
+        {
+            "id": "Cura\u00e7ao",
+            "type": "country",
+            "latitude": 12.186111,
+            "longitude": -68.989444
+        },
+        {
+            "id": "Cayman Islands",
+            "type": "country",
+            "latitude": 19.513469,
+            "longitude": -80.566956
+        },
+        {
+            "id": "Cyprus",
+            "type": "country",
+            "latitude": 35.126413,
+            "longitude": 33.429859
+        },
+        {
+            "id": "Czechia",
+            "type": "country",
+            "latitude": 49.817492,
+            "longitude": 15.472962
+        },
+        {
+            "id": "Germany",
+            "type": "country",
+            "latitude": 51.165691,
+            "longitude": 10.451526
+        },
+        {
+            "id": "Djibouti",
+            "type": "country",
+            "latitude": 11.825138,
+            "longitude": 42.590275
+        },
+        {
+            "id": "Dominica",
+            "type": "country",
+            "latitude": 15.414999,
+            "longitude": -61.370976
+        },
+        {
+            "id": "Denmark",
+            "type": "country",
+            "latitude": 56.26392,
+            "longitude": 9.501785
+        },
+        {
+            "id": "Dominican Republic",
+            "type": "country",
+            "latitude": 18.735693,
+            "longitude": -70.162651
+        },
+        {
+            "id": "Algeria",
+            "type": "country",
+            "latitude": 28.033886,
+            "longitude": 1.659626
+        },
+        {
+            "id": "Ecuador",
+            "type": "country",
+            "latitude": -1.831239,
+            "longitude": -78.183406
+        },
+        {
+            "id": "Egypt",
+            "type": "country",
+            "latitude": 26.820553,
+            "longitude": 30.802498
+        },
+        {
+            "id": "Eritrea",
+            "type": "country",
+            "latitude": 15.179384,
+            "longitude": 39.782334
+        },
+        {
+            "id": "Spain",
+            "type": "country",
+            "latitude": 40.463667,
+            "longitude": -3.74922
+        },
+        {
+            "id": "Estonia",
+            "type": "country",
+            "latitude": 58.595272,
+            "longitude": 25.013607
+        },
+        {
+            "id": "Ethiopia",
+            "type": "country",
+            "latitude": 9.145,
+            "longitude": 40.489673
+        },
+        {
+            "id": "Finland",
+            "type": "country",
+            "latitude": 61.92411,
+            "longitude": 25.748151
+        },
+        {
+            "id": "Fiji",
+            "type": "country",
+            "latitude": -16.578193,
+            "longitude": 179.414413
+        },
+        {
+            "id": "France",
+            "type": "country",
+            "latitude": 46.227638,
+            "longitude": 2.213749
+        },
+        {
+            "id": "Micronesia (Federated States of)",
+            "type": "country",
+            "latitude": 7.425554,
+            "longitude": 150.550812
+        },
+        {
+            "id": "Gabon",
+            "type": "country",
+            "latitude": -0.803689,
+            "longitude": 11.609444
+        },
+        {
+            "id": "United Kingdom of Great Britain and Northern Ireland",
+            "type": "country",
+            "latitude": 55.378051,
+            "longitude": -3.435973
+        },
+        {
+            "id": "Georgia",
+            "type": "country",
+            "latitude": 42.315407,
+            "longitude": 43.356892
+        },
+        {
+            "id": "Ghana",
+            "type": "country",
+            "latitude": 7.946527,
+            "longitude": -1.023194
+        },
+        {
+            "id": "Guinea",
+            "type": "country",
+            "latitude": 9.945587,
+            "longitude": -9.696645
+        },
+        {
+            "id": "Gambia",
+            "type": "country",
+            "latitude": 13.443182,
+            "longitude": -15.310139
+        },
+        {
+            "id": "Guinea-Bissau",
+            "type": "country",
+            "latitude": 11.803749,
+            "longitude": -15.180413
+        },
+        {
+            "id": "Equatorial Guinea",
+            "type": "country",
+            "latitude": 1.650801,
+            "longitude": 10.267895
+        },
+        {
+            "id": "Greece",
+            "type": "country",
+            "latitude": 39.074208,
+            "longitude": 21.824312
+        },
+        {
+            "id": "Grenada",
+            "type": "country",
+            "latitude": 12.262776,
+            "longitude": -61.604171
+        },
+        {
+            "id": "Greenland",
+            "type": "country",
+            "latitude": 71.706936,
+            "longitude": -42.604303
+        },
+        {
+            "id": "Guatemala",
+            "type": "country",
+            "latitude": 15.783471,
+            "longitude": -90.230759
+        },
+        {
+            "id": "Guam",
+            "type": "country",
+            "latitude": 13.444304,
+            "longitude": 144.793731
+        },
+        {
+            "id": "Guyana",
+            "type": "country",
+            "latitude": 4.860416,
+            "longitude": -58.93018
+        },
+        {
+            "id": "Honduras",
+            "type": "country",
+            "latitude": 15.199999,
+            "longitude": -86.241905
+        },
+        {
+            "id": "Croatia",
+            "type": "country",
+            "latitude": 45.1,
+            "longitude": 15.2
+        },
+        {
+            "id": "Haiti",
+            "type": "country",
+            "latitude": 18.971187,
+            "longitude": -72.285215
+        },
+        {
+            "id": "Hungary",
+            "type": "country",
+            "latitude": 47.162494,
+            "longitude": 19.503304
+        },
+        {
+            "id": "Indonesia",
+            "type": "country",
+            "latitude": -0.789275,
+            "longitude": 113.921327
+        },
+        {
+            "id": "India",
+            "type": "country",
+            "latitude": 20.593684,
+            "longitude": 78.96288
+        },
+        {
+            "id": "Ireland",
+            "type": "country",
+            "latitude": 53.41291,
+            "longitude": -8.24389
+        },
+        {
+            "id": "Iran (Islamic Republic of)",
+            "type": "country",
+            "latitude": 32.427908,
+            "longitude": 53.688046
+        },
+        {
+            "id": "Iraq",
+            "type": "country",
+            "latitude": 33.223191,
+            "longitude": 43.679291
+        },
+        {
+            "id": "Iceland",
+            "type": "country",
+            "latitude": 64.963051,
+            "longitude": -19.020835
+        },
+        {
+            "id": "Israel",
+            "type": "country",
+            "latitude": 31.046051,
+            "longitude": 34.851612
+        },
+        {
+            "id": "Italy",
+            "type": "country",
+            "latitude": 41.87194,
+            "longitude": 12.56738
+        },
+        {
+            "id": "Jamaica",
+            "type": "country",
+            "latitude": 18.109581,
+            "longitude": -77.297508
+        },
+        {
+            "id": "Jordan",
+            "type": "country",
+            "latitude": 30.585164,
+            "longitude": 36.238414
+        },
+        {
+            "id": "Japan",
+            "type": "country",
+            "latitude": 36.204824,
+            "longitude": 138.252924
+        },
+        {
+            "id": "Kazakhstan",
+            "type": "country",
+            "latitude": 48.019573,
+            "longitude": 66.923684
+        },
+        {
+            "id": "Kenya",
+            "type": "country",
+            "latitude": -0.023559,
+            "longitude": 37.906193
+        },
+        {
+            "id": "Kyrgyzstan",
+            "type": "country",
+            "latitude": 41.20438,
+            "longitude": 74.766098
+        },
+        {
+            "id": "Cambodia",
+            "type": "country",
+            "latitude": 12.565679,
+            "longitude": 104.990963
+        },
+        {
+            "id": "Kiribati",
+            "type": "country",
+            "latitude": -3.370417,
+            "longitude": -168.734039
+        },
+        {
+            "id": "Saint Kitts and Nevis",
+            "type": "country",
+            "latitude": 17.357822,
+            "longitude": -62.782998
+        },
+        {
+            "id": "Kuwait",
+            "type": "country",
+            "latitude": 29.31166,
+            "longitude": 47.481766
+        },
+        {
+            "id": "Lao People's Democratic Republic",
+            "type": "country",
+            "latitude": 19.85627,
+            "longitude": 102.495496
+        },
+        {
+            "id": "Lebanon",
+            "type": "country",
+            "latitude": 33.854721,
+            "longitude": 35.862285
+        },
+        {
+            "id": "Liberia",
+            "type": "country",
+            "latitude": 6.428055,
+            "longitude": -9.429499
+        },
+        {
+            "id": "Libya",
+            "type": "country",
+            "latitude": 26.3351,
+            "longitude": 17.228331
+        },
+        {
+            "id": "Saint Lucia",
+            "type": "country",
+            "latitude": 13.909444,
+            "longitude": -60.978893
+        },
+        {
+            "id": "Sri Lanka",
+            "type": "country",
+            "latitude": 7.873054,
+            "longitude": 80.771797
+        },
+        {
+            "id": "Lesotho",
+            "type": "country",
+            "latitude": -29.609988,
+            "longitude": 28.233608
+        },
+        {
+            "id": "Lithuania",
+            "type": "country",
+            "latitude": 55.169438,
+            "longitude": 23.881275
+        },
+        {
+            "id": "Luxembourg",
+            "type": "country",
+            "latitude": 49.815273,
+            "longitude": 6.129583
+        },
+        {
+            "id": "Latvia",
+            "type": "country",
+            "latitude": 56.879635,
+            "longitude": 24.603189
+        },
+        {
+            "id": "Morocco",
+            "type": "country",
+            "latitude": 31.791702,
+            "longitude": -7.09262
+        },
+        {
+            "id": "Monaco",
+            "type": "country",
+            "latitude": 43.750298,
+            "longitude": 7.412841
+        },
+        {
+            "id": "Madagascar",
+            "type": "country",
+            "latitude": -18.766947,
+            "longitude": 46.869107
+        },
+        {
+            "id": "Maldives",
+            "type": "country",
+            "latitude": 3.202778,
+            "longitude": 73.22068
+        },
+        {
+            "id": "Mexico",
+            "type": "country",
+            "latitude": 23.634501,
+            "longitude": -102.552784
+        },
+        {
+            "id": "Marshall Islands",
+            "type": "country",
+            "latitude": 7.131474,
+            "longitude": 171.184478
+        },
+        {
+            "id": "North Macedonia",
+            "type": "country",
+            "latitude": 41.608635,
+            "longitude": 21.745275
+        },
+        {
+            "id": "Mali",
+            "type": "country",
+            "latitude": 17.570692,
+            "longitude": -3.996166
+        },
+        {
+            "id": "Malta",
+            "type": "country",
+            "latitude": 35.937496,
+            "longitude": 14.375416
+        },
+        {
+            "id": "Myanmar",
+            "type": "country",
+            "latitude": 21.913965,
+            "longitude": 95.956223
+        },
+        {
+            "id": "Montenegro",
+            "type": "country",
+            "latitude": 42.708678,
+            "longitude": 19.37439
+        },
+        {
+            "id": "Mongolia",
+            "type": "country",
+            "latitude": 46.862496,
+            "longitude": 103.846656
+        },
+        {
+            "id": "Northern Mariana Islands",
+            "type": "country",
+            "latitude": 17.33083,
+            "longitude": 145.38469
+        },
+        {
+            "id": "Mozambique",
+            "type": "country",
+            "latitude": -18.665695,
+            "longitude": 35.529562
+        },
+        {
+            "id": "Mauritania",
+            "type": "country",
+            "latitude": 21.00789,
+            "longitude": -10.940835
+        },
+        {
+            "id": "Montserrat",
+            "type": "country",
+            "latitude": 16.742498,
+            "longitude": -62.187366
+        },
+        {
+            "id": "Mauritius",
+            "type": "country",
+            "latitude": -20.348404,
+            "longitude": 57.552152
+        },
+        {
+            "id": "Malawi",
+            "type": "country",
+            "latitude": -13.254308,
+            "longitude": 34.301525
+        },
+        {
+            "id": "Malaysia",
+            "type": "country",
+            "latitude": 4.210484,
+            "longitude": 101.975766
+        },
+        {
+            "id": "Namibia",
+            "type": "country",
+            "latitude": -22.95764,
+            "longitude": 18.49041
+        },
+        {
+            "id": "New Caledonia",
+            "type": "country",
+            "latitude": -20.904305,
+            "longitude": 165.618042
+        },
+        {
+            "id": "Niger",
+            "type": "country",
+            "latitude": 17.607789,
+            "longitude": 8.081666
+        },
+        {
+            "id": "Nigeria",
+            "type": "country",
+            "latitude": 9.081999,
+            "longitude": 8.675277
+        },
+        {
+            "id": "Nicaragua",
+            "type": "country",
+            "latitude": 12.865416,
+            "longitude": -85.207229
+        },
+        {
+            "id": "Niue",
+            "type": "country",
+            "latitude": -19.054445,
+            "longitude": -169.867233
+        },
+        {
+            "id": "Netherlands",
+            "type": "country",
+            "latitude": 52.132633,
+            "longitude": 5.291266
+        },
+        {
+            "id": "Norway",
+            "type": "country",
+            "latitude": 60.472024,
+            "longitude": 8.468946
+        },
+        {
+            "id": "Nepal",
+            "type": "country",
+            "latitude": 28.394857,
+            "longitude": 84.124008
+        },
+        {
+            "id": "Nauru",
+            "type": "country",
+            "latitude": -0.522778,
+            "longitude": 166.931503
+        },
+        {
+            "id": "New Zealand",
+            "type": "country",
+            "latitude": -40.900557,
+            "longitude": 174.885971
+        },
+        {
+            "id": "Oman",
+            "type": "country",
+            "latitude": 21.512583,
+            "longitude": 55.923255
+        },
+        {
+            "id": "Pakistan",
+            "type": "country",
+            "latitude": 30.375321,
+            "longitude": 69.345116
+        },
+        {
+            "id": "Panama",
+            "type": "country",
+            "latitude": 8.537981,
+            "longitude": -80.782127
+        },
+        {
+            "id": "Peru",
+            "type": "country",
+            "latitude": -9.189967,
+            "longitude": -75.015152
+        },
+        {
+            "id": "Philippines",
+            "type": "country",
+            "latitude": 12.879721,
+            "longitude": 121.774017
+        },
+        {
+            "id": "Palau",
+            "type": "country",
+            "latitude": 7.51498,
+            "longitude": 134.58252
+        },
+        {
+            "id": "Papua New Guinea",
+            "type": "country",
+            "latitude": -6.314993,
+            "longitude": 143.95555
+        },
+        {
+            "id": "Poland",
+            "type": "country",
+            "latitude": 51.919438,
+            "longitude": 19.145136
+        },
+        {
+            "id": "Puerto Rico",
+            "type": "country",
+            "latitude": 18.220833,
+            "longitude": -66.590149
+        },
+        {
+            "id": "Portugal",
+            "type": "country",
+            "latitude": 39.399872,
+            "longitude": -8.224454
+        },
+        {
+            "id": "Paraguay",
+            "type": "country",
+            "latitude": -23.442503,
+            "longitude": -58.443832
+        },
+        {
+            "id": "French Polynesia",
+            "type": "country",
+            "latitude": -17.679742,
+            "longitude": -149.406843
+        },
+        {
+            "id": "Qatar",
+            "type": "country",
+            "latitude": 25.354826,
+            "longitude": 51.183884
+        },
+        {
+            "id": "Romania",
+            "type": "country",
+            "latitude": 45.943161,
+            "longitude": 24.96676
+        },
+        {
+            "id": "Russian Federation",
+            "type": "country",
+            "latitude": 61.52401,
+            "longitude": 105.318756
+        },
+        {
+            "id": "Rwanda",
+            "type": "country",
+            "latitude": -1.940278,
+            "longitude": 29.873888
+        },
+        {
+            "id": "Saudi Arabia",
+            "type": "country",
+            "latitude": 23.885942,
+            "longitude": 45.079162
+        },
+        {
+            "id": "Sudan",
+            "type": "country",
+            "latitude": 12.862807,
+            "longitude": 30.217636
+        },
+        {
+            "id": "Senegal",
+            "type": "country",
+            "latitude": 14.497401,
+            "longitude": -14.452362
+        },
+        {
+            "id": "Singapore",
+            "type": "country",
+            "latitude": 1.352083,
+            "longitude": 103.819836
+        },
+        {
+            "id": "Solomon Islands",
+            "type": "country",
+            "latitude": -9.64571,
+            "longitude": 160.156194
+        },
+        {
+            "id": "Sierra Leone",
+            "type": "country",
+            "latitude": 8.460555,
+            "longitude": -11.779889
+        },
+        {
+            "id": "El Salvador",
+            "type": "country",
+            "latitude": 13.794185,
+            "longitude": -88.89653
+        },
+        {
+            "id": "San Marino",
+            "type": "country",
+            "latitude": 43.94236,
+            "longitude": 12.457777
+        },
+        {
+            "id": "Somalia",
+            "type": "country",
+            "latitude": 5.152149,
+            "longitude": 46.199616
+        },
+        {
+            "id": "Serbia",
+            "type": "country",
+            "latitude": 44.016521,
+            "longitude": 21.005859
+        },
+        {
+            "id": "South Sudan",
+            "type": "country",
+            "latitude": 8.0,
+            "longitude": 30.0
+        },
+        {
+            "id": "Sao Tome and Principe",
+            "type": "country",
+            "latitude": 0.18636,
+            "longitude": 6.613081
+        },
+        {
+            "id": "Suriname",
+            "type": "country",
+            "latitude": 3.919305,
+            "longitude": -56.027783
+        },
+        {
+            "id": "Slovakia",
+            "type": "country",
+            "latitude": 48.669026,
+            "longitude": 19.699024
+        },
+        {
+            "id": "Slovenia",
+            "type": "country",
+            "latitude": 46.151241,
+            "longitude": 14.995463
+        },
+        {
+            "id": "Sweden",
+            "type": "country",
+            "latitude": 60.128161,
+            "longitude": 18.643501
+        },
+        {
+            "id": "Eswatini",
+            "type": "country",
+            "latitude": -26.522503,
+            "longitude": 31.465866
+        },
+        {
+            "id": "Sint Maarten (Dutch part)",
+            "type": "country",
+            "latitude": 18.04258,
+            "longitude": -63.056017
+        },
+        {
+            "id": "Seychelles",
+            "type": "country",
+            "latitude": -4.679574,
+            "longitude": 55.491977
+        },
+        {
+            "id": "Syrian Arab Republic",
+            "type": "country",
+            "latitude": 34.802075,
+            "longitude": 38.996815
+        },
+        {
+            "id": "Turks and Caicos Islands",
+            "type": "country",
+            "latitude": 21.694025,
+            "longitude": -71.797928
+        },
+        {
+            "id": "Chad",
+            "type": "country",
+            "latitude": 15.454166,
+            "longitude": 18.732207
+        },
+        {
+            "id": "Togo",
+            "type": "country",
+            "latitude": 8.619543,
+            "longitude": 0.824782
+        },
+        {
+            "id": "Thailand",
+            "type": "country",
+            "latitude": 15.870032,
+            "longitude": 100.992541
+        },
+        {
+            "id": "Tajikistan",
+            "type": "country",
+            "latitude": 38.861034,
+            "longitude": 71.276093
+        },
+        {
+            "id": "Tokelau",
+            "type": "country",
+            "latitude": -8.967363,
+            "longitude": -171.855881
+        },
+        {
+            "id": "Turkmenistan",
+            "type": "country",
+            "latitude": 38.969719,
+            "longitude": 59.556278
+        },
+        {
+            "id": "Timor-Leste",
+            "type": "country",
+            "latitude": -8.874217,
+            "longitude": 125.727539
+        },
+        {
+            "id": "Tonga",
+            "type": "country",
+            "latitude": -21.178986,
+            "longitude": -175.198242
+        },
+        {
+            "id": "Trinidad and Tobago",
+            "type": "country",
+            "latitude": 10.691803,
+            "longitude": -61.222503
+        },
+        {
+            "id": "Tunisia",
+            "type": "country",
+            "latitude": 33.886917,
+            "longitude": 9.537499
+        },
+        {
+            "id": "Tuvalu",
+            "type": "country",
+            "latitude": -7.109535,
+            "longitude": 177.64933
+        },
+        {
+            "id": "Uganda",
+            "type": "country",
+            "latitude": 1.373333,
+            "longitude": 32.290275
+        },
+        {
+            "id": "Ukraine",
+            "type": "country",
+            "latitude": 48.379433,
+            "longitude": 31.16558
+        },
+        {
+            "id": "Uruguay",
+            "type": "country",
+            "latitude": -32.522779,
+            "longitude": -55.765835
+        },
+        {
+            "id": "United States of America",
+            "type": "country",
+            "latitude": 37.09024,
+            "longitude": -95.712891
+        },
+        {
+            "id": "Uzbekistan",
+            "type": "country",
+            "latitude": 41.377491,
+            "longitude": 64.585262
+        },
+        {
+            "id": "Saint Vincent and the Grenadines",
+            "type": "country",
+            "latitude": 12.984305,
+            "longitude": -61.287228
+        },
+        {
+            "id": "Venezuela (Bolivarian Republic of)",
+            "type": "country",
+            "latitude": 6.42375,
+            "longitude": -66.58973
+        },
+        {
+            "id": "British Virgin Islands",
+            "type": "country",
+            "latitude": 18.420695,
+            "longitude": -64.639968
+        },
+        {
+            "id": "Viet Nam",
+            "type": "country",
+            "latitude": 14.058324,
+            "longitude": 108.277199
+        },
+        {
+            "id": "Vanuatu",
+            "type": "country",
+            "latitude": -15.376706,
+            "longitude": 166.959158
+        },
+        {
+            "id": "Samoa",
+            "type": "country",
+            "latitude": -13.759029,
+            "longitude": -172.104629
+        },
+        {
+            "id": "Yemen",
+            "type": "country",
+            "latitude": 15.552727,
+            "longitude": 48.516388
+        },
+        {
+            "id": "South Africa",
+            "type": "country",
+            "latitude": -30.559482,
+            "longitude": 22.937506
+        },
+        {
+            "id": "Zambia",
+            "type": "country",
+            "latitude": -13.133897,
+            "longitude": 27.849332
+        },
+        {
+            "id": "Zimbabwe",
+            "type": "country",
+            "latitude": -19.015438,
+            "longitude": 29.154857
+        }
+    ],
+    "links": [
+        {
+            "source": "AMR",
+            "target": "Aruba"
+        },
+        {
+            "source": "EMR",
+            "target": "Afghanistan"
+        },
+        {
+            "source": "AFR",
+            "target": "Angola"
+        },
+        {
+            "source": "AMR",
+            "target": "Anguilla"
+        },
+        {
+            "source": "EUR",
+            "target": "Albania"
+        },
+        {
+            "source": "EUR",
+            "target": "Andorra"
+        },
+        {
+            "source": "AMR",
+            "target": "Netherlands Antilles"
+        },
+        {
+            "source": "EMR",
+            "target": "United Arab Emirates"
+        },
+        {
+            "source": "AMR",
+            "target": "Argentina"
+        },
+        {
+            "source": "EUR",
+            "target": "Armenia"
+        },
+        {
+            "source": "WPR",
+            "target": "American Samoa"
+        },
+        {
+            "source": "AMR",
+            "target": "Antigua and Barbuda"
+        },
+        {
+            "source": "WPR",
+            "target": "Australia"
+        },
+        {
+            "source": "EUR",
+            "target": "Austria"
+        },
+        {
+            "source": "EUR",
+            "target": "Azerbaijan"
+        },
+        {
+            "source": "AFR",
+            "target": "Burundi"
+        },
+        {
+            "source": "EUR",
+            "target": "Belgium"
+        },
+        {
+            "source": "AFR",
+            "target": "Benin"
+        },
+        {
+            "source": "AFR",
+            "target": "Burkina Faso"
+        },
+        {
+            "source": "SEA",
+            "target": "Bangladesh"
+        },
+        {
+            "source": "EUR",
+            "target": "Bulgaria"
+        },
+        {
+            "source": "EMR",
+            "target": "Bahrain"
+        },
+        {
+            "source": "AMR",
+            "target": "Bahamas"
+        },
+        {
+            "source": "EUR",
+            "target": "Bosnia and Herzegovina"
+        },
+        {
+            "source": "EUR",
+            "target": "Belarus"
+        },
+        {
+            "source": "AMR",
+            "target": "Belize"
+        },
+        {
+            "source": "AMR",
+            "target": "Bermuda"
+        },
+        {
+            "source": "AMR",
+            "target": "Bolivia (Plurinational State of)"
+        },
+        {
+            "source": "AMR",
+            "target": "Brazil"
+        },
+        {
+            "source": "AMR",
+            "target": "Barbados"
+        },
+        {
+            "source": "WPR",
+            "target": "Brunei Darussalam"
+        },
+        {
+            "source": "SEA",
+            "target": "Bhutan"
+        },
+        {
+            "source": "AFR",
+            "target": "Botswana"
+        },
+        {
+            "source": "AFR",
+            "target": "Central African Republic"
+        },
+        {
+            "source": "AMR",
+            "target": "Canada"
+        },
+        {
+            "source": "EUR",
+            "target": "Switzerland"
+        },
+        {
+            "source": "AMR",
+            "target": "Chile"
+        },
+        {
+            "source": "WPR",
+            "target": "China"
+        },
+        {
+            "source": "AFR",
+            "target": "C\u00f4te d'Ivoire"
+        },
+        {
+            "source": "AFR",
+            "target": "Cameroon"
+        },
+        {
+            "source": "AFR",
+            "target": "Congo"
+        },
+        {
+            "source": "WPR",
+            "target": "Cook Islands"
+        },
+        {
+            "source": "AMR",
+            "target": "Colombia"
+        },
+        {
+            "source": "AFR",
+            "target": "Comoros"
+        },
+        {
+            "source": "AMR",
+            "target": "Costa Rica"
+        },
+        {
+            "source": "AMR",
+            "target": "Cuba"
+        },
+        {
+            "source": "EUR",
+            "target": "Afghanistan"
+        },
+        {
+            "source": "AMR",
+            "target": "Cura\u00e7ao"
+        },
+        {
+            "source": "AMR",
+            "target": "Cayman Islands"
+        },
+        {
+            "source": "EUR",
+            "target": "Cyprus"
+        },
+        {
+            "source": "EUR",
+            "target": "Czechia"
+        },
+        {
+            "source": "EUR",
+            "target": "Germany"
+        },
+        {
+            "source": "EMR",
+            "target": "Djibouti"
+        },
+        {
+            "source": "AMR",
+            "target": "Dominica"
+        },
+        {
+            "source": "EUR",
+            "target": "Denmark"
+        },
+        {
+            "source": "AMR",
+            "target": "Dominican Republic"
+        },
+        {
+            "source": "AFR",
+            "target": "Algeria"
+        },
+        {
+            "source": "AMR",
+            "target": "Ecuador"
+        },
+        {
+            "source": "EMR",
+            "target": "Egypt"
+        },
+        {
+            "source": "AFR",
+            "target": "Eritrea"
+        },
+        {
+            "source": "EUR",
+            "target": "Spain"
+        },
+        {
+            "source": "EUR",
+            "target": "Estonia"
+        },
+        {
+            "source": "AFR",
+            "target": "Ethiopia"
+        },
+        {
+            "source": "EUR",
+            "target": "Finland"
+        },
+        {
+            "source": "WPR",
+            "target": "Fiji"
+        },
+        {
+            "source": "EUR",
+            "target": "France"
+        },
+        {
+            "source": "WPR",
+            "target": "Micronesia (Federated States of)"
+        },
+        {
+            "source": "AFR",
+            "target": "Gabon"
+        },
+        {
+            "source": "EUR",
+            "target": "United Kingdom of Great Britain and Northern Ireland"
+        },
+        {
+            "source": "EUR",
+            "target": "Georgia"
+        },
+        {
+            "source": "AFR",
+            "target": "Ghana"
+        },
+        {
+            "source": "AFR",
+            "target": "Guinea"
+        },
+        {
+            "source": "AFR",
+            "target": "Gambia"
+        },
+        {
+            "source": "AFR",
+            "target": "Guinea-Bissau"
+        },
+        {
+            "source": "AFR",
+            "target": "Equatorial Guinea"
+        },
+        {
+            "source": "EUR",
+            "target": "Greece"
+        },
+        {
+            "source": "AMR",
+            "target": "Grenada"
+        },
+        {
+            "source": "EUR",
+            "target": "Greenland"
+        },
+        {
+            "source": "AMR",
+            "target": "Guatemala"
+        },
+        {
+            "source": "WPR",
+            "target": "Guam"
+        },
+        {
+            "source": "AMR",
+            "target": "Guyana"
+        },
+        {
+            "source": "AMR",
+            "target": "Honduras"
+        },
+        {
+            "source": "EUR",
+            "target": "Croatia"
+        },
+        {
+            "source": "AMR",
+            "target": "Haiti"
+        },
+        {
+            "source": "EUR",
+            "target": "Hungary"
+        },
+        {
+            "source": "SEA",
+            "target": "Indonesia"
+        },
+        {
+            "source": "SEA",
+            "target": "India"
+        },
+        {
+            "source": "EUR",
+            "target": "Ireland"
+        },
+        {
+            "source": "EMR",
+            "target": "Iran (Islamic Republic of)"
+        },
+        {
+            "source": "EMR",
+            "target": "Iraq"
+        },
+        {
+            "source": "EUR",
+            "target": "Iceland"
+        },
+        {
+            "source": "EUR",
+            "target": "Israel"
+        },
+        {
+            "source": "EUR",
+            "target": "Italy"
+        },
+        {
+            "source": "AMR",
+            "target": "Jamaica"
+        },
+        {
+            "source": "EMR",
+            "target": "Jordan"
+        },
+        {
+            "source": "WPR",
+            "target": "Japan"
+        },
+        {
+            "source": "EUR",
+            "target": "Kazakhstan"
+        },
+        {
+            "source": "AFR",
+            "target": "Kenya"
+        },
+        {
+            "source": "EUR",
+            "target": "Kyrgyzstan"
+        },
+        {
+            "source": "WPR",
+            "target": "Cambodia"
+        },
+        {
+            "source": "WPR",
+            "target": "Kiribati"
+        },
+        {
+            "source": "AMR",
+            "target": "Saint Kitts and Nevis"
+        },
+        {
+            "source": "EMR",
+            "target": "Kuwait"
+        },
+        {
+            "source": "WPR",
+            "target": "Lao People's Democratic Republic"
+        },
+        {
+            "source": "EMR",
+            "target": "Lebanon"
+        },
+        {
+            "source": "AFR",
+            "target": "Liberia"
+        },
+        {
+            "source": "EMR",
+            "target": "Libya"
+        },
+        {
+            "source": "AMR",
+            "target": "Saint Lucia"
+        },
+        {
+            "source": "SEA",
+            "target": "Sri Lanka"
+        },
+        {
+            "source": "AFR",
+            "target": "Lesotho"
+        },
+        {
+            "source": "EUR",
+            "target": "Lithuania"
+        },
+        {
+            "source": "EUR",
+            "target": "Luxembourg"
+        },
+        {
+            "source": "EUR",
+            "target": "Latvia"
+        },
+        {
+            "source": "EMR",
+            "target": "Morocco"
+        },
+        {
+            "source": "EUR",
+            "target": "Monaco"
+        },
+        {
+            "source": "AFR",
+            "target": "Madagascar"
+        },
+        {
+            "source": "SEA",
+            "target": "Maldives"
+        },
+        {
+            "source": "AMR",
+            "target": "Mexico"
+        },
+        {
+            "source": "WPR",
+            "target": "Marshall Islands"
+        },
+        {
+            "source": "EUR",
+            "target": "North Macedonia"
+        },
+        {
+            "source": "AFR",
+            "target": "Mali"
+        },
+        {
+            "source": "EUR",
+            "target": "Malta"
+        },
+        {
+            "source": "SEA",
+            "target": "Myanmar"
+        },
+        {
+            "source": "EUR",
+            "target": "Montenegro"
+        },
+        {
+            "source": "WPR",
+            "target": "Mongolia"
+        },
+        {
+            "source": "WPR",
+            "target": "Northern Mariana Islands"
+        },
+        {
+            "source": "AFR",
+            "target": "Mozambique"
+        },
+        {
+            "source": "AFR",
+            "target": "Mauritania"
+        },
+        {
+            "source": "AMR",
+            "target": "Montserrat"
+        },
+        {
+            "source": "AFR",
+            "target": "Mauritius"
+        },
+        {
+            "source": "AFR",
+            "target": "Malawi"
+        },
+        {
+            "source": "WPR",
+            "target": "Malaysia"
+        },
+        {
+            "source": "AFR",
+            "target": "Namibia"
+        },
+        {
+            "source": "WPR",
+            "target": "New Caledonia"
+        },
+        {
+            "source": "AFR",
+            "target": "Niger"
+        },
+        {
+            "source": "AFR",
+            "target": "Nigeria"
+        },
+        {
+            "source": "AMR",
+            "target": "Nicaragua"
+        },
+        {
+            "source": "WPR",
+            "target": "Niue"
+        },
+        {
+            "source": "EUR",
+            "target": "Netherlands"
+        },
+        {
+            "source": "EUR",
+            "target": "Norway"
+        },
+        {
+            "source": "SEA",
+            "target": "Nepal"
+        },
+        {
+            "source": "WPR",
+            "target": "Nauru"
+        },
+        {
+            "source": "WPR",
+            "target": "New Zealand"
+        },
+        {
+            "source": "EMR",
+            "target": "Oman"
+        },
+        {
+            "source": "EMR",
+            "target": "Pakistan"
+        },
+        {
+            "source": "AMR",
+            "target": "Panama"
+        },
+        {
+            "source": "AMR",
+            "target": "Peru"
+        },
+        {
+            "source": "WPR",
+            "target": "Philippines"
+        },
+        {
+            "source": "WPR",
+            "target": "Palau"
+        },
+        {
+            "source": "WPR",
+            "target": "Papua New Guinea"
+        },
+        {
+            "source": "EUR",
+            "target": "Poland"
+        },
+        {
+            "source": "AMR",
+            "target": "Puerto Rico"
+        },
+        {
+            "source": "EUR",
+            "target": "Portugal"
+        },
+        {
+            "source": "AMR",
+            "target": "Paraguay"
+        },
+        {
+            "source": "WPR",
+            "target": "French Polynesia"
+        },
+        {
+            "source": "EMR",
+            "target": "Qatar"
+        },
+        {
+            "source": "EUR",
+            "target": "Romania"
+        },
+        {
+            "source": "EUR",
+            "target": "Russian Federation"
+        },
+        {
+            "source": "AFR",
+            "target": "Rwanda"
+        },
+        {
+            "source": "EMR",
+            "target": "Saudi Arabia"
+        },
+        {
+            "source": "EMR",
+            "target": "Sudan"
+        },
+        {
+            "source": "AFR",
+            "target": "Senegal"
+        },
+        {
+            "source": "WPR",
+            "target": "Singapore"
+        },
+        {
+            "source": "WPR",
+            "target": "Solomon Islands"
+        },
+        {
+            "source": "AFR",
+            "target": "Sierra Leone"
+        },
+        {
+            "source": "AMR",
+            "target": "El Salvador"
+        },
+        {
+            "source": "EUR",
+            "target": "San Marino"
+        },
+        {
+            "source": "EMR",
+            "target": "Somalia"
+        },
+        {
+            "source": "EUR",
+            "target": "Serbia"
+        },
+        {
+            "source": "AFR",
+            "target": "South Sudan"
+        },
+        {
+            "source": "AFR",
+            "target": "Sao Tome and Principe"
+        },
+        {
+            "source": "AMR",
+            "target": "Suriname"
+        },
+        {
+            "source": "EUR",
+            "target": "Slovakia"
+        },
+        {
+            "source": "EUR",
+            "target": "Slovenia"
+        },
+        {
+            "source": "EUR",
+            "target": "Sweden"
+        },
+        {
+            "source": "AFR",
+            "target": "Eswatini"
+        },
+        {
+            "source": "AMR",
+            "target": "Sint Maarten (Dutch part)"
+        },
+        {
+            "source": "AFR",
+            "target": "Seychelles"
+        },
+        {
+            "source": "EMR",
+            "target": "Syrian Arab Republic"
+        },
+        {
+            "source": "AMR",
+            "target": "Turks and Caicos Islands"
+        },
+        {
+            "source": "AFR",
+            "target": "Chad"
+        },
+        {
+            "source": "AFR",
+            "target": "Togo"
+        },
+        {
+            "source": "SEA",
+            "target": "Thailand"
+        },
+        {
+            "source": "EUR",
+            "target": "Tajikistan"
+        },
+        {
+            "source": "WPR",
+            "target": "Tokelau"
+        },
+        {
+            "source": "EUR",
+            "target": "Turkmenistan"
+        },
+        {
+            "source": "SEA",
+            "target": "Timor-Leste"
+        },
+        {
+            "source": "WPR",
+            "target": "Tonga"
+        },
+        {
+            "source": "AMR",
+            "target": "Trinidad and Tobago"
+        },
+        {
+            "source": "EMR",
+            "target": "Tunisia"
+        },
+        {
+            "source": "WPR",
+            "target": "Tuvalu"
+        },
+        {
+            "source": "AFR",
+            "target": "Uganda"
+        },
+        {
+            "source": "EUR",
+            "target": "Ukraine"
+        },
+        {
+            "source": "AMR",
+            "target": "Uruguay"
+        },
+        {
+            "source": "AMR",
+            "target": "United States of America"
+        },
+        {
+            "source": "EUR",
+            "target": "Uzbekistan"
+        },
+        {
+            "source": "AMR",
+            "target": "Saint Vincent and the Grenadines"
+        },
+        {
+            "source": "AMR",
+            "target": "Venezuela (Bolivarian Republic of)"
+        },
+        {
+            "source": "AMR",
+            "target": "British Virgin Islands"
+        },
+        {
+            "source": "WPR",
+            "target": "Viet Nam"
+        },
+        {
+            "source": "WPR",
+            "target": "Vanuatu"
+        },
+        {
+            "source": "WPR",
+            "target": "Samoa"
+        },
+        {
+            "source": "EMR",
+            "target": "Yemen"
+        },
+        {
+            "source": "AFR",
+            "target": "South Africa"
+        },
+        {
+            "source": "AFR",
+            "target": "Zambia"
+        },
+        {
+            "source": "AFR",
+            "target": "Zimbabwe"
+        }
+    ]
+}

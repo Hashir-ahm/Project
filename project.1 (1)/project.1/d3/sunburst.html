@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunburst Chart</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      .sunburst {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 700px;
+      }
+
+      .arc {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+
+      .arc:hover {
+        opacity: 1;
+      }
+
+      .breadcrumb {
+        margin-bottom: 10px;
+        font-size: 12px;
+      }
+
+      .breadcrumb a {
+        text-decoration: none;
+        color: #337ab7;
+      }
+
+      .breadcrumb span {
+        margin-right: 5px;
+      }
+
+      text {
+        visibility: hidden; /* Initially hide all text */
+        font-size: 10px;
+        fill: white;
+        text-anchor: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="breadcrumb"></div>
+    <svg class="sunburst"></svg>
+
+    <script>
+      const width = 800;
+      const radius = width / 2;
+      const color = d3.scaleOrdinal(d3.schemeCategory10);
+
+      const svg = d3
+        .select(".sunburst")
+        .attr("width", width)
+        .attr("height", width)
+        .append("g")
+        .attr("transform", `translate(${radius},${radius})`);
+
+      const partition = d3
+        .partition()
+        .size([2 * Math.PI, radius])
+        .padding(0.03);
+
+      const arc = d3
+        .arc()
+        .startAngle((d) => d.x0)
+        .endAngle((d) => d.x1)
+        .innerRadius((d) => d.y0)
+        .outerRadius((d) => d.y1);
+
+      // Load the JSON data
+      d3.json("sunburst_chart_data.json").then(function (data) {
+        const root = d3
+          .hierarchy(data)
+          .sum((d) => d.newinc_tb) // Sum 'newinc_tb' for each node
+          .sort((a, b) => b.value - a.value);
+
+        // Apply the partition layout
+        partition(root);
+
+        const path = svg
+          .selectAll("path")
+          .data(root.descendants())
+          .enter()
+          .append("path")
+          .attr("class", "arc")
+          .attr("d", arc)
+          .style("fill", (d) => color(d.depth))
+          .on("click", (event, d) => {
+            // Display breadcrumb navigation when a node is clicked
+            d3.select(".breadcrumb").html(
+              `<span><a href="#">${d.data.name}</a></span>`
+            );
+          })
+          .append("title")
+          .text((d) => `${d.data.name}: ${d.value}`);
+
+        // Add text labels
+        const labels = svg
+          .selectAll("text")
+          .data(root.descendants())
+          .enter()
+          .append("text")
+          .attr("transform", (d) => {
+            const angle = (d.x0 + d.x1) / 2;
+            const x = ((d.y0 + d.y1) / 2) * Math.sin(angle);
+            const y = ((d.y0 + d.y1) / 2) * Math.cos(angle);
+            return `translate(${x},${y})`;
+          })
+          .text((d) => d.data.name)
+          .attr("font-size", "10px")
+          .attr("fill", "white");
+
+        // Show labels on hover
+        path.on("mouseover", function (event, d) {
+          labels
+            .filter((label) => label.data.name === d.data.name)
+            .style("visibility", "visible"); // Show label on hover
+        });
+
+        // Hide labels when mouse leaves
+        path.on("mouseout", function (event, d) {
+          labels
+            .filter((label) => label.data.name === d.data.name)
+            .style("visibility", "hidden"); // Hide label when mouse leaves
+        });
+      });
+    </script>
+  </body>
+</html>

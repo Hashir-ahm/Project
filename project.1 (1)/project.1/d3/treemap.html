@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hierarchical Tree Map</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+      .node rect {
+        stroke: #fff;
+        fill-opacity: 0.9;
+      }
+      .node text {
+        font-size: 12px;
+        fill: #000;
+        pointer-events: none;
+      }
+      .tooltip {
+        position: absolute;
+        text-align: center;
+        width: auto;
+        padding: 8px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        border-radius: 4px;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      .legend {
+        font-size: 14px;
+      }
+      .legend rect {
+        stroke-width: 1;
+        stroke: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tooltip" class="tooltip"></div>
+    <svg id="treemap"></svg>
+
+    <script>
+      // Dimensions
+      const width = 1000;
+      const height = 600;
+
+      // Set up SVG
+      const svg = d3
+        .select("#treemap")
+        .attr("width", width + 150)
+        .attr("height", height);
+
+      // Tooltip
+      const tooltip = d3.select("#tooltip");
+
+      // Load JSON data
+      d3.json("hierarchical_tree_map.json").then((data) => {
+        // Assign unique colors to regions
+        const regionColors = {
+          AFR: "#FF5733", // Bright Orange
+          AMR: "#33FF57", // Bright Green
+          EMR: "#3357FF", // Bright Blue
+          EUR: "#FFD700", // Bright Yellow
+          SEA: "#FF33A8", // Bright Pink
+          WPR: "#33FFF1", // Bright Cyan
+        };
+
+        // Create a hierarchy
+        const root = d3
+          .hierarchy(data)
+          .sum((d) => d.value)
+          .sort((a, b) => b.value - a.value);
+
+        // Create a treemap layout
+        const treemap = d3.treemap().size([width, height]).paddingInner(2);
+
+        treemap(root);
+
+        // Draw rectangles
+        const nodes = svg
+          .selectAll("g")
+          .data(root.descendants())
+          .enter()
+          .append("g")
+          .attr("transform", (d) => `translate(${d.x0},${d.y0})`)
+          .attr("class", "node");
+
+        nodes
+          .append("rect")
+          .attr("width", (d) => d.x1 - d.x0)
+          .attr("height", (d) => d.y1 - d.y0)
+          .attr("fill", (d) => {
+            if (d.depth === 1) return regionColors[d.data.name];
+            if (d.depth === 2) return regionColors[d.parent.data.name];
+            return "#ccc";
+          })
+          .on("mouseover", (event, d) => {
+            tooltip
+              .style("opacity", 1)
+              .html(`Name: ${d.data.name}<br>Value: ${d.value}`)
+              .style("left", `${event.pageX + 10}px`)
+              .style("top", `${event.pageY - 10}px`);
+          })
+          .on("mousemove", (event) => {
+            tooltip
+              .style("left", `${event.pageX + 10}px`)
+              .style("top", `${event.pageY - 10}px`);
+          })
+          .on("mouseout", () => {
+            tooltip.style("opacity", 0);
+          });
+
+        nodes
+          .append("text")
+          .attr("dx", 4)
+          .attr("dy", 14)
+          .text((d) => d.data.name)
+          .style("display", (d) =>
+            d.x1 - d.x0 > 50 && d.y1 - d.y0 > 20 ? "block" : "none"
+          );
+
+        // Add a legend for regions
+        const legend = svg
+          .append("g")
+          .attr("class", "legend")
+          .attr("transform", `translate(${width - 200},20)`);
+
+        const regions = Object.keys(regionColors);
+
+        legend
+          .selectAll("rect")
+          .data(regions)
+          .enter()
+          .append("rect")
+          .attr("x", 250)
+          .attr("y", (d, i) => i * 20)
+          .attr("width", 20)
+          .attr("height", 20)
+          .attr("fill", (d) => regionColors[d]);
+
+        legend
+          .selectAll("text")
+          .data(regions)
+          .enter()
+          .append("text")
+          .attr("x", 210)
+          .attr("y", (d, i) => i * 20 + 15)
+          .text((d) => d);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Line Animation</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+      .tooltip {
+        position: absolute;
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 5px;
+        pointer-events: none;
+        opacity: 0;
+      }
+      svg {
+        font: 10px sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label for="category">Select Category:</label>
+      <select id="category"></select>
+    </div>
+    <button id="playPause">Play</button>
+    <button id="reset">Reset</button>
+    <svg id="chart"></svg>
+    <div class="tooltip"></div>
+
+    <script>
+      const margin = { top: 20, right: 30, bottom: 30, left: 50 };
+      const width = 700 - margin.left - margin.right;
+      const height = 400 - margin.top - margin.bottom;
+
+      const svg = d3
+        .select("#chart")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
+
+      const tooltip = d3.select(".tooltip");
+
+      const x = d3.scaleTime().range([0, width]);
+      const y = d3.scaleLinear().range([height, 0]);
+
+      const xAxis = d3.axisBottom(x);
+      const yAxis = d3.axisLeft(y);
+
+      svg
+        .append("g")
+        .attr("class", "x-axis")
+        .attr("transform", `translate(0,${height})`);
+      svg.append("g").attr("class", "y-axis");
+
+      const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+
+      let play = false;
+      let interval;
+      let yearIndex = 0;
+
+      d3.json("bubble_chart_data.json").then((data) => {
+        data.forEach((d) => {
+          d.Year = new Date(d.Year, 0); // Convert Year to Date object
+          d.Population = +d.Population; // Convert Population to number
+        });
+
+        const categories = Array.from(new Set(data.map((d) => d.Country)));
+        const dropdown = d3.select("#category");
+
+        dropdown
+          .selectAll("option")
+          .data(categories)
+          .join("option")
+          .attr("value", (d) => d)
+          .text((d) => d);
+
+        let filteredData;
+        let lineColor;
+
+        function drawLine(yearIndex) {
+          const currentData = filteredData.slice(0, yearIndex + 1);
+
+          svg
+            .selectAll(".line")
+            .data([currentData])
+            .join("path")
+            .attr("class", "line")
+            .attr("fill", "none")
+            .attr("stroke", lineColor)
+            .attr("stroke-width", 1.5)
+            .attr(
+              "d",
+              d3
+                .line()
+                .x((d) => x(d.Year))
+                .y((d) => y(d.Population))
+            );
+
+          const dots = svg.selectAll(".dot").data(currentData);
+
+          dots
+            .enter()
+            .append("circle")
+            .attr("class", "dot")
+            .attr("r", 5)
+            .merge(dots)
+            .attr("cx", (d) => x(d.Year))
+            .attr("cy", (d) => y(d.Population))
+            .attr("fill", lineColor)
+            .on("mouseover", (event, d) => {
+              tooltip
+                .style("opacity", 1)
+                .html(
+                  `Year: ${d.Year.getFullYear()}<br>Population: ${d.Population}`
+                )
+                .style("left", `${event.pageX + 5}px`)
+                .style("top", `${event.pageY - 28}px`);
+            })
+            .on("mousemove", (event) => {
+              tooltip
+                .style("left", `${event.pageX + 5}px`)
+                .style("top", `${event.pageY - 28}px`);
+            })
+            .on("mouseout", () => tooltip.style("opacity", 0));
+
+          dots.exit().remove();
+        }
+
+        function update(selectedCategory) {
+          filteredData = data.filter((d) => d.Country === selectedCategory);
+
+          x.domain(d3.extent(filteredData, (d) => d.Year));
+          y.domain([0, d3.max(filteredData, (d) => d.Population)]);
+
+          svg.select(".x-axis").call(xAxis);
+          svg.select(".y-axis").call(yAxis);
+
+          lineColor = colorScale(selectedCategory);
+
+          yearIndex = 0; // Reset year index for play animation
+          drawLine(yearIndex); // Draw initial state
+        }
+
+        function playAnimation() {
+          if (yearIndex < filteredData.length - 1) {
+            yearIndex++;
+            drawLine(yearIndex);
+          } else {
+            clearInterval(interval);
+            play = false;
+            d3.select("#playPause").text("Play");
+          }
+        }
+
+        dropdown.on("change", () => {
+          const selectedCategory = dropdown.node().value;
+          update(selectedCategory);
+          play = false;
+          d3.select("#playPause").text("Play");
+          clearInterval(interval);
+        });
+
+        d3.select("#playPause").on("click", () => {
+          play = !play;
+          if (play) {
+            d3.select("#playPause").text("Pause");
+            interval = setInterval(playAnimation, 500);
+          } else {
+            d3.select("#playPause").text("Play");
+            clearInterval(interval);
+          }
+        });
+
+        d3.select("#reset").on("click", () => {
+          play = false;
+          clearInterval(interval);
+          d3.select("#playPause").text("Play");
+          yearIndex = 0;
+          drawLine(yearIndex);
+        });
+
+        update(categories[0]); // Initial render
+      });
+    </script>
+  </body>
+</html>
